@@ -13,7 +13,6 @@ struct Stack<T> {
 }
 
 impl<T: std::fmt::Display + std::str::FromStr + Serialize + Deserialize> Stack<T> {
-    // Ваш код остается неизменным
 
     fn bench_push(c: &mut Criterion) {
         let mut my_stack = Stack::new();
